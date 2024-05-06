@@ -7,18 +7,18 @@ body {
      padding: 20px;
 }
 :root {
-    --primary-color: #9EC5AB
-    --secondary-color: #32746D
-    --accent1-color: #104F55
-    --accent2color: #011502
+    --primary-color: #9EC5AB;
+    --secondary-color: #32746D;
+    --accent1-color: #104F55;
+    --accent2color: #011502;
 
-    --heading-font: 'Roboto', serif;
-    --paragraph-font: 'Open Sans', serif;
+    --heading-font: 'Roboto', Arial, serif;
+    --paragraph-font: 'Open Sans', helvetica, serif;
 
-    --nav-background-color: #32746D
-    --nav-link-color: #011502
-    --nav-hover-link-color: #104F55
-    --nav-hover-background-color: #011502
+    --nav-background-color: #32746D;
+    --nav-link-color: #011502;
+    --nav-hover-link-color: #104F55;
+    --nav-hover-background-color: #011502;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
