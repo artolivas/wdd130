@@ -34,12 +34,12 @@ h2 {
     font-size: 200%;
 }
 
-/* Header & Footer*/
-
+/* Header */
 header {
     margin: 1rem auto;
     display: grid;
-    grid-template: 5fr 10fr 1fr;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
     border-bottom: 1px solid #ccc;
     max-width: 100%;
 }
@@ -53,7 +53,7 @@ header img {
 nav {
     font-size: 1.2rem;
     display: flex;
-    margin: 1rem;;
+    margin: 1rem;
     justify-content: center;
     align-items: center;
 }
@@ -65,37 +65,13 @@ nav a {
     padding: 1rem;
 }
 
-nav a:link{
+nav a:link {
     color: var(--accent1-color);
 }
 
-nav a:hover{
-    color: var(--primary-color);
-    background-color: var(--nav-hover-background-color);
-}
-
-footer{
-    display: flex;
-    justify-content: center;
-
-    align-items: center;
-}
-
-.social-media-icons{
-    justify-items: right;
-}
-
-footer a{
-    text-decoration: none;
-}
-
-footer p{
-    text-align: center;
-    padding: 25px;
-}
-
-footer img{
-    width: 30px;
+nav a:hover {
+    color: var(--accent2-color);
+    background-color: #ccc;
 }
 
 /* Paragraphs */
@@ -198,4 +174,23 @@ a:hover {
 
 .adventure-images figcaption{
     text-align: center;
+}
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer p {
+    text-align: center;
+    padding: 25px;
+}
+
+footer img {
+    width: 30px;
 }
