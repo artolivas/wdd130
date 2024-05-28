@@ -1,0 +1,114 @@
+/* Importing Google Fonts - Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Define CSS variables for color schema */
+:root {
+    --primary-color: #9EC5AB; /* Cambridge Blue */
+    --secondary-color: #32746D; /* Myrtle Green */
+    --accent1-color: #104F55; /* Midnight Green */
+    --accent2-color: #011502; /* Night */
+}
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    max-width: 1200px; /* Limit width for easier design */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-color);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+/* Links */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    text-decoration: none;
+}
+
+/* Social Media Links */
+.social-media a {
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Article */
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: var(--article-bg-color);
+    padding: 10px;
+    z-index: 1;
+}
+
+.hero article img {
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+/* Additional Styles for better readability */
+.hero article p {
+    margin: 0;
+    color: var(--text-color);
+}
