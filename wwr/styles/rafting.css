@@ -39,7 +39,7 @@ h2 {
 header {
     margin: 1rem auto;
     display: grid;
-    grid-template: 5fr 10 fr 1fr;
+    grid-template: 5fr 10fr 1fr;
     border-bottom: 1px solid #ccc;
     max-width: 100%;
 }
@@ -60,17 +60,17 @@ nav {
 
 nav a {
     display: block;
-    color: var(--primary-color);
+    color: var(--accent1-color);
     text-decoration: none;
     padding: 1rem;
 }
 
 nav a:link{
-    color: var(--primary-color);
+    color: var(--accent1-color);
 }
 
 nav a:hover{
-    color: var(--nav-hover-link-color);
+    color: var(--primary-color);
     background-color: var(--nav-hover-background-color);
 }
 
@@ -166,6 +166,12 @@ a:hover {
     margin-top: 20px;
 }
 
+/* Additional Styles for better readability */
+.hero article p {
+    margin: 0;
+    color: var(--text-color);
+}
+
 /* History Section*/
 .history-content{
     display: flex;
@@ -178,8 +184,18 @@ a:hover {
 	height: auto;
 }
 
-/* Additional Styles for better readability */
-.hero article p {
-    margin: 0;
-    color: var(--text-color);
+/*Adventure Section*/
+.adventure-images{
+    display: flex;
+    justify-content: space-around;
+}
+
+.adventure-images img{
+	margin: auto;
+	width: 200px;
+	height: 150px;
+}
+
+.adventure-images figcaption{
+    text-align: center;
 }
