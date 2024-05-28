@@ -29,28 +29,73 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0.5rem;
 }
 
-h1 {
-    font-size: 2.5rem;
-}
-
 h2 {
-    font-size: 2rem;
+    text-align: center;
+    font-size: 200%;
 }
 
-h3 {
-    font-size: 1.75rem;
+/* Header & Footer*/
+
+header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template: 5fr 10 fr 1fr;
+    border-bottom: 1px solid #ccc;
+    max-width: 100%;
 }
 
-h4 {
-    font-size: 1.5rem;
+header img {
+    margin: auto;
+    width: 75px;
+    height: auto;
 }
 
-h5 {
-    font-size: 1.25rem;
+nav {
+    font-size: 1.2rem;
+    display: flex;
+    margin: 1rem;;
+    justify-content: center;
+    align-items: center;
 }
 
-h6 {
-    font-size: 1rem;
+nav a {
+    display: block;
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link{
+    color: var(--primary-color);
+}
+
+nav a:hover{
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+}
+
+.social-media-icons{
+    justify-items: right;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer p{
+    text-align: center;
+    padding: 25px;
+}
+
+footer img{
+    width: 30px;
 }
 
 /* Paragraphs */
@@ -82,8 +127,6 @@ a:hover {
 /* Hero Section */
 .hero {
     position: relative;
-    width: 100%;
-    height: auto;
 }
 
 .hero img {
@@ -92,28 +135,47 @@ a:hover {
     height: auto;
 }
 
-/* Article */
-.hero h1 {
+.hero h1{
     position: absolute;
-    top: 20px;
-    left: 20px;
-    background-color: var(--article-bg-color);
-    padding: 10px;
-    z-index: 1;
+    color: white;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 15%;
+    font-size: 2.0em;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0.8;
 }
 
-.hero article {
+.hero article{
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background-color: var(--article-bg-color);
-    padding: 10px;
-    z-index: 1;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 40%;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 60%;
+    height: 50%;
 }
 
-.hero article img {
+.hero article img{
     float: right;
-    margin: 0 0 10px 10px;
+    max-width: 20%;
+    padding: 2%;
+    margin-top: 20px;
+}
+
+/* History Section*/
+.history-content{
+    display: flex;
+    justify-content: center;
+}
+
+.history img{
+	margin: auto;
+	width: 300px;
+	height: auto;
 }
 
 /* Additional Styles for better readability */
