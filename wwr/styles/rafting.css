@@ -93,6 +93,15 @@ a:hover {
 }
 
 /* Article */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: var(--article-bg-color);
+    padding: 10px;
+    z-index: 1;
+}
+
 .hero article {
     position: absolute;
     bottom: 20px;
