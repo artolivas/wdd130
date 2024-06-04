@@ -1,0 +1,196 @@
+/* Importing Google Fonts - Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Define CSS variables for color schema */
+:root {
+    --primary-color: #9EC5AB; /* Cambridge Blue */
+    --secondary-color: #32746D; /* Myrtle Green */
+    --accent1-color: #104F55; /* Midnight Green */
+    --accent2-color: #011502; /* Night */
+}
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    max-width: 1200px; /* Limit width for easier design */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-color);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 200%;
+}
+
+/* Header */
+header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    max-width: 100%;
+}
+
+header img {
+    margin: auto;
+    width: 75px;
+    height: auto;
+}
+
+nav {
+    font-size: 1.2rem;
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    display: block;
+    color: var(--accent1-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link {
+    color: var(--accent1-color);
+}
+
+nav a:hover {
+    color: var(--accent2-color);
+    background-color: #ccc;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+/* Links */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    text-decoration: none;
+}
+
+/* Social Media Links */
+.social-media a {
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1{
+    position: absolute;
+    color: white;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 15%;
+    font-size: 2.0em;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0.8;
+}
+
+.hero article{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 40%;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 60%;
+    height: 50%;
+}
+
+.hero article img{
+    float: right;
+    max-width: 20%;
+    padding: 2%;
+    margin-top: 20px;
+}
+
+/* Additional Styles for better readability */
+.hero article p {
+    margin: 0;
+    color: var(--text-color);
+}
+
+/* History Section*/
+.history-content{
+    display: flex;
+    justify-content: center;
+}
+
+.history img{
+	margin: auto;
+	width: 300px;
+	height: auto;
+}
+
+/*Adventure Section*/
+.adventure-images{
+    display: flex;
+    justify-content: space-around;
+}
+
+.adventure-images img{
+	margin: auto;
+	width: 200px;
+	height: 150px;
+}
+
+.adventure-images figcaption{
+    text-align: center;
+}
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer p {
+    text-align: center;
+    padding: 25px;
+}
+
+footer img {
+    width: 30px;
+}
