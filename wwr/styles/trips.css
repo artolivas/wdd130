@@ -127,7 +127,6 @@ a:hover {
     text-decoration: none;
 }
 
-
 /* Hero Section */
 .hero {
     text-align: center;
@@ -154,6 +153,54 @@ a:hover {
     background-color: var(--accent2-color);
 }
 
+/* Trip Details */
+.trip-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.trip {
+    flex: 1 1 30%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.trip img {
+    width: 100%;
+    max-width: 300px; /* Set a maximum width for the images */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.trip h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.trip p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.trip .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--accent1-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.trip .button:hover {
+    background-color: var(--accent2-color);
+}
+
 /* Testimonials */
 .testimonials {
     background-color: var(--primary-color);
@@ -170,6 +217,7 @@ a:hover {
     margin-bottom: 20px;
     font-style: italic;
 }
+
 /* Footer */
 footer {
     display: flex;
