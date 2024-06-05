@@ -1,3 +1,133 @@
+/* Define CSS variables for color schema */
+:root {
+    --primary-color: #9EC5AB; /* Cambridge Blue */
+    --secondary-color: #32746D; /* Myrtle Green */
+    --accent1-color: #104F55; /* Midnight Green */
+    --accent2-color: #011502; /* Night */
+}
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    max-width: 1200px; /* Limit width for easier design */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-color);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 200%;
+}
+
+/* Header */
+header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    max-width: 100%;
+}
+
+header img {
+    margin: auto;
+    width: 75px;
+    height: auto;
+}
+
+nav {
+    font-size: 1.2rem;
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    display: block;
+    color: var(--accent1-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link {
+    color: var(--accent1-color);
+}
+
+nav a:hover {
+    color: var(--accent2-color);
+    background-color: #ccc;
+}
+
+/* Background and Text Color */
+body {
+    --background-color: #E6EBE0; /* Alabaster */
+    --text-color: #000000; /* Night */
+    --heading-color: #104F55; /* Midnight Green */
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+}
+
+p {
+    color: black;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+/* Navigation Links */
+nav a {
+    color: var(--link-color);
+}
+
+nav a:link {
+    color: var(--link-color);
+}
+
+nav a:hover {
+    background-color: var(--nav-hover-background-color);
+}
+
+/* Links */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    text-decoration: none;
+}
+
+/* Social Media Links */
+.social-media a {
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    text-decoration: none;
+}
+
+
 /* Hero Section */
 .hero {
     text-align: center;
@@ -39,4 +169,23 @@
 .testimonial {
     margin-bottom: 20px;
     font-style: italic;
+}
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer p {
+    text-align: center;
+    padding: 25px;
+}
+
+footer img {
+    width: 30px;
 }
