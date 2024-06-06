@@ -155,14 +155,20 @@ a:hover {
 }
 
 /* Newsletter Section */
+/* Newsletter Section */
 .newsletter {
     text-align: center;
     margin: 2rem 0;
+    background-color: var(--primary-color); /* Add background color */
+    padding: 20px;
+    border-radius: 10px; /* Add rounded corners */
 }
 
 .newsletter form {
-    display: inline-block;
-    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Add space between input fields */
 }
 
 .newsletter label {
@@ -171,19 +177,17 @@ a:hover {
 }
 
 .newsletter input {
-    display: block;
-    width: 100%;
+    width: auto; /* Auto width for better alignment */
     padding: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0; /* Remove margin */
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 .newsletter button {
     display: block;
-    width: 100%;
-    padding: 0.5rem;
-    background-color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    background-color: var(--secondary-color);
     color: white;
     border: none;
     border-radius: 5px;
@@ -191,7 +195,7 @@ a:hover {
 }
 
 .newsletter button:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--accent1-color);
 }
 
 /* Call to Action Section */

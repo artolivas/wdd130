@@ -117,35 +117,43 @@ a:hover {
     height: auto;
 }
 
-.hero h1, .hero p {
+.hero h1 {
     position: absolute;
-    color: white;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.7); /* Light background color with opacity */
+    padding: 20px; /* Padding for better readability */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 3em; /* Larger font size */
+    width: 90%; /* Span almost the entirety of the Hero Banner */
+    z-index: 1;
 }
 
-.hero h1 {
-    top: 30%;
-    font-size: 2em; /* Adjusted font size */
+.hero article {
+    position: relative;
+    margin-top: 20px; /* Add margin to separate from the h1 */
 }
 
-.hero p {
-    top: 45%;
-    font-size: 1.2em; /* Adjusted font size */
+.hero article img {
+    display: block;
+    margin: 0 auto;
+    width: 100%; /* Adjust width as needed */
+    height: auto;
 }
 
-.hero .cta-button {
-    top: 60%;
-    padding: 10px 20px; /* Adjusted padding */
-    background-color: var(--accent1-color);
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.hero .cta-button:hover {
-    background-color: var(--accent2-color);
+.hero article p {
+    position: absolute;
+    top: 50%; /* Adjust as needed */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7); /* Light background color with opacity */
+    padding: 20px; /* Padding for better readability */
+    border-radius: 5px; /* Rounded corners */
+    z-index: 2;
+    width: 80%; /* Adjust width as needed */
 }
 
 /* Additional Styles for better readability */
@@ -168,18 +176,30 @@ a:hover {
 
 /* Adventure Section */
 .adventure-images {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-gap: 20px; /* Space between images */
+    justify-items: center; /* Center items horizontally */
+}
+
+.adventure-images figure {
+    margin: 0;
 }
 
 .adventure-images img {
-    margin: auto;
     width: 200px;
     height: 150px;
 }
 
 .adventure-images figcaption {
     text-align: center;
+}
+
+.adventure-images figure:nth-child(4),
+.adventure-images figure:nth-child(5) {
+    grid-column: span 1; /* Each of these figures will span one column */
+    grid-row: 2; /* Move these figures to the second row */
+    justify-self: center; /* Center items horizontally */
 }
 
 /* Footer */
