@@ -1,0 +1,243 @@
+/* Importing Google Fonts - Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Define CSS variables for color schema */
+:root {
+    --primary-color: #9EC5AB; /* Cambridge Blue */
+    --secondary-color: #32746D; /* Myrtle Green */
+    --accent1-color: #104F55; /* Midnight Green */
+    --accent2-color: #011502; /* Night */
+    --background-color: #E6EBE0; /* Alabaster */
+    --text-color: #000000; /* Night */
+    --heading-color: #104F55; /* Midnight Green */
+    --link-color: #104F55; /* Matching Accent1 */
+    --link-hover-color: #011502; /* Matching Accent2 */
+    --nav-hover-background-color: #ccc; /* Lighter Gray for hover */
+}
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    max-width: 1200px; /* Limit width for easier design */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-color);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 200%;
+}
+
+/* Header */
+header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    max-width: 100%;
+    background-color: var(--primary-color);
+}
+
+header img {
+    margin: auto;
+    width: 75px;
+    height: auto;
+}
+
+nav {
+    font-size: 1.2rem;
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    display: block;
+    color: var(--link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link {
+    color: var(--link-color);
+}
+
+nav a:hover {
+    color: var(--link-hover-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+/* Links */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    text-decoration: none;
+}
+
+/* Social Media Links */
+.social-media a {
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Adjusted max-height */
+    object-fit: cover;
+}
+
+.hero h1, .hero p, .hero .cta-button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white; /* Text color set to white */
+}
+
+.hero h1 {
+    top: 30%;
+    font-size: 2em; /* Adjusted font size */
+}
+
+.hero p {
+    top: 45%;
+    font-size: 1.2em; /* Adjusted font size */
+}
+
+/* Newsletter Section */
+.newsletter {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.newsletter form {
+    display: inline-block;
+    text-align: left;
+}
+
+.newsletter label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.newsletter input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Call to Action Section */
+.cta {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--accent1-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: var(--accent2-color);
+}
+
+/* Grid Layout Section */
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 2rem 0;
+}
+
+.grid-layout article {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.grid-layout img {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Adjusted max-height */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer p {
+    text-align: center;
+    padding: 25px;
+}
+
+footer img {
+    width: 30px;
+}
