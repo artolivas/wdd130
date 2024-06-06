@@ -7,6 +7,11 @@
     --secondary-color: #32746D; /* Myrtle Green */
     --accent1-color: #104F55; /* Midnight Green */
     --accent2-color: #011502; /* Night */
+    --background-color: #E6EBE0; /* Alabaster */
+    --text-color: #000000; /* Night */
+    --heading-color: #104F55; /* Midnight Green */
+    --link-color: #104F55; /* Midnight Green */
+    --link-hover-color: #011502; /* Night */
 }
 
 /* Global Styles */
@@ -42,6 +47,7 @@ header {
     align-items: center;
     border-bottom: 1px solid #ccc;
     max-width: 100%;
+    background-color: var(--primary-color);
 }
 
 header img {
@@ -111,35 +117,35 @@ a:hover {
     height: auto;
 }
 
-.hero h1{
+.hero h1, .hero p {
     position: absolute;
     color: white;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    top: 15%;
-    font-size: 2.0em;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.7);
-    opacity: 0.8;
 }
 
-.hero article{
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    top: 40%;
-    background-color: rgba(255, 255, 255, 0.7);
-    width: 60%;
-    height: 50%;
+.hero h1 {
+    top: 30%;
+    font-size: 2em; /* Adjusted font size */
 }
 
-.hero article img{
-    float: right;
-    max-width: 20%;
-    padding: 2%;
-    margin-top: 20px;
+.hero p {
+    top: 45%;
+    font-size: 1.2em; /* Adjusted font size */
+}
+
+.hero .cta-button {
+    top: 60%;
+    padding: 10px 20px; /* Adjusted padding */
+    background-color: var(--accent1-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .cta-button:hover {
+    background-color: var(--accent2-color);
 }
 
 /* Additional Styles for better readability */
@@ -148,33 +154,34 @@ a:hover {
     color: var(--text-color);
 }
 
-/* History Section*/
-.history-content{
+/* History Section */
+.history-content {
     display: flex;
     justify-content: center;
 }
 
-.history img{
-	margin: auto;
-	width: 300px;
-	height: auto;
+.history img {
+    margin: auto;
+    width: 300px;
+    height: auto;
 }
 
-/*Adventure Section*/
-.adventure-images{
+/* Adventure Section */
+.adventure-images {
     display: flex;
     justify-content: space-around;
 }
 
-.adventure-images img{
-	margin: auto;
-	width: 200px;
-	height: 150px;
+.adventure-images img {
+    margin: auto;
+    width: 200px;
+    height: 150px;
 }
 
-.adventure-images figcaption{
+.adventure-images figcaption {
     text-align: center;
 }
+
 /* Footer */
 footer {
     display: flex;

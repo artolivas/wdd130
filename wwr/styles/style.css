@@ -130,13 +130,28 @@ a:hover {
 }
 
 .hero h1 {
-    top: 30%;
-    font-size: 2em; /* Adjusted font size */
+    top: 25%;
+    font-size: 3em; /* Increased font size */
+    width: 90%; /* Span most of the image */
 }
 
 .hero p {
     top: 45%;
-    font-size: 1.2em; /* Adjusted font size */
+    font-size: 1.5em; /* Adjusted font size */
+    margin-top: 1rem; /* Added space between h1 and p */
+}
+
+.hero .cta-button {
+    top: 60%;
+    padding: 10px 20px; /* Adjusted padding */
+    background-color: var(--accent1-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .cta-button:hover {
+    background-color: var(--accent2-color);
 }
 
 /* Newsletter Section */
